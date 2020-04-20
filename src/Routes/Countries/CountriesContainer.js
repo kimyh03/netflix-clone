@@ -1,5 +1,5 @@
 import React from "react";
-import DetailPresenter from "./DetailPresenter";
+import CountriesPresenter from "./CountriesPresenter";
 import { moviesApi, tvApi } from "../../api";
 
 export default class extends React.Component {
@@ -44,9 +44,8 @@ export default class extends React.Component {
 
   render() {
     const { result, isMovie, error, loading } = this.state;
-
     return (
-      <DetailPresenter
+      <CountriesPresenter
         isMovie={isMovie}
         result={result}
         error={error}
